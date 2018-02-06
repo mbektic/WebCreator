@@ -71,13 +71,56 @@ blockManager.add('carousel', {
 blockManager.add('container', {
     category: "Web Serv Tools",
     label: 'Container',
-    content: '<div style="min-height: 100px" class="container-fluid"></div>'
+    content: '<div style="min-height: 100px" class="container-fluid"></div>',
+    attributes: {
+        class: "gjs-fonts gjs-f-b1"
+    }
 });
 blockManager.add('row', {
     category: "Web Serv Tools",
     label: 'Row',
     content: '<div style="min-height: 100px" class="row"></div>'
 });
+blockManager.add('2 columns', {
+    category: "Web Serv Tools",
+    label: '2 Columns',
+    content: '<div class="row" style="min-height: 100px">'+
+    '<div class="col-sm" style="min-height: 100px">'+
+    '<p>Testing Text</p>'+
+    '</div>'+
+    '<div class="col-sm" style="min-height: 100px">'+
+    '<p>Testing Text</p>'+
+    '</div>'+
+    '</div>',
+    attributes: {
+        class: "gjs-fonts gjs-f-b2"
+    }
+});
+blockManager.add('3 columns', {
+    category: "Web Serv Tools",
+    label: '3 Columns',
+    content: '<div class="row" style="min-height: 100px">'+
+    '<div class="col-sm" style="min-height: 100px">'+
+    '<p>Testing Text</p>'+
+    '</div>'+
+    '<div class="col-sm" style="min-height: 100px">'+
+    '<p>Testing Text</p>'+
+    '</div>'+
+    '<div class="col-sm" style="min-height: 100px">'+
+    '<p>Testing Text</p>'+
+    '</div>'+
+    '</div>',
+    attributes: {
+        class: "gjs-fonts gjs-f-b3"
+    }
+});
+
+
+
+
+
+
+
 
 var styleManager = editor.StyleManager;
 
@@ -91,6 +134,3 @@ styleManager.addSector('Dimension',{
         min: 0
     }]
 });
-
-
-
