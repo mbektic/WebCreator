@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body >
 <!--NAVBAR-->
 <header>
     <!--UPPERBAR-->
@@ -56,6 +56,7 @@
             </ul>
         </div>
     </div>
+
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background-color:#f3f3f3">
         <a id="navLogo" class="navbar-brand float-left" href="#"><img src="img/logo-desktop.png"></a>
@@ -102,6 +103,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
+
     <!--LOWERBAR-->
     <div  id="lowerBar" class="container-fluid collapse navbar-collapse desktopHide">
         <div class="row justify-content-end ">
@@ -123,17 +125,59 @@
 </header>
 <!-- NAVBAR END-->
 
-<div id="gjs" style="overflow:hidden">
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
+<!--GRAPEJS BEGINS-->
+<div id="gjs" class="wrapper container-fluid" style="overflow:hidden">
+    <!--OUR CONTENT-->
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
     </div>
 
 </div>
+<!--GRAPEJS ENDS-->
+
 <!--SCRIPTS-->
+<script>
+    // if (typeof Object.assign != 'function') {
+    //     Object.defineProperty(Object, "assign", {
+    //         value: function assign(target, varArgs) {
+    //             'use strict';
+    //             if (target == null) {
+    //                 throw new TypeError('Cannot convert undefined or null to object');
+    //             }
+    //             var to = Object(target);
+    //             for (var index = 1; index < arguments.length; index++) {
+    //                 var nextSource = arguments[index];
+    //                 if (nextSource != null) {
+    //                     for (var nextKey in nextSource) {
+    //                         if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+    //                             to[nextKey] = nextSource[nextKey];
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             return to;
+    //         },
+    //         writable: true,
+    //         configurable: true
+    //     });
+    // }
+    if (detectIE()) {
+        var originalCreateHTMLDocument = DOMImplementation.prototype.createHTMLDocument
+        DOMImplementation.prototype.createHTMLDocument = function (title) {
+            if (!title) title = ''
+            return originalCreateHTMLDocument.apply(document.implementation, [title]);
+        }
+    }
+</script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <script src="./js/grapes.js"></script>
 <script src="./js/grapesjs-blocks-basic.min.js"></script>
 <script src="./js/grapesjs-tabs.min.js"></script>
