@@ -1,0 +1,91 @@
+{
+  "_from": "grapesjs-preset-webpage",
+  "_id": "grapesjs-preset-webpage@0.1.8",
+  "_inBundle": false,
+  "_integrity": "sha512-Z/EDUpjUbWQ4K19n7d315GaF951gIgPGjsZ7bw2YH7I6OODdIvyU9MKCrtOprbTk8ZwUTDHA6oADz1oPxOEjAg==",
+  "_location": "/grapesjs-preset-webpage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "grapesjs-preset-webpage",
+    "name": "grapesjs-preset-webpage",
+    "escapedName": "grapesjs-preset-webpage",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/grapesjs-preset-webpage/-/grapesjs-preset-webpage-0.1.8.tgz",
+  "_shasum": "9ce501bcf6e8e72a44f73c91e0cd589cc366f157",
+  "_spec": "grapesjs-preset-webpage",
+  "_where": "C:\\Users\\wcgate01\\IdeaProjects\\webcreator",
+  "author": {
+    "name": "Artur Arseniev"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/artf/grapesjs-preset-webpage/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "grapesjs": "^0.13.8",
+    "grapesjs-aviary": "^0.1.2",
+    "grapesjs-blocks-basic": "^0.1.2",
+    "grapesjs-component-countdown": "^0.1.1",
+    "grapesjs-lory-slider": "^0.1.5",
+    "grapesjs-navbar": "^0.1.3",
+    "grapesjs-plugin-export": "^0.1.5",
+    "grapesjs-plugin-filestack": "^0.1.1",
+    "grapesjs-plugin-forms": "^0.3.4"
+  },
+  "deprecated": false,
+  "description": "GrapesJS Plugin Webpage Preset",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "homepage": "https://github.com/artf/grapesjs-preset-webpage#readme",
+  "keywords": [
+    "grapesjs",
+    "plugin",
+    "webpage",
+    "preset",
+    "wysiwyg"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "dist/grapesjs-preset-webpage.min.js",
+  "name": "grapesjs-preset-webpage",
+  "peerDependencies": {
+    "grapesjs": "0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artf/grapesjs-preset-webpage.git"
+  },
+  "scripts": {
+    "build": "npm run v:patch && webpack --env.production && npm run build:css",
+    "build:css": "node-sass src/style/main.scss dist/grapesjs-preset-webpage.min.css --output-style compressed",
+    "lint": "eslint src",
+    "start": "webpack-dev-server --open --progress --colors & npm run build:css -- -w",
+    "v:patch": "npm version --no-git-tag-version patch"
+  },
+  "version": "0.1.8"
+}

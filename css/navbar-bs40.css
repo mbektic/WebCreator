@@ -1,0 +1,140 @@
+/* UPPEBAR */
+#upperbar{
+  width: 100%;
+  min-height: 4px;
+  display: block;
+  background-color: #AD0000;
+}
+
+.accounts{
+  font-size: 10px;
+  display: inline;
+}
+
+.accounts ul.mobileHide.float-right {
+   margin: 0;
+}
+
+.accounts ul li{
+  list-style: none;
+
+}
+
+.accounts ul li a{
+  color: #fff;
+  opacity: .7;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.accounts li div{
+   width: 175px;
+   padding-right: 0;
+}
+
+.accounts li div.dropdown-menu.show{
+     margin-right: 8px;
+}
+
+.accounts li div a{
+  color: #AD0000;
+  font-size: 10px;
+  padding-left: 5px;
+  float: none;
+  width: 100%;
+}
+
+/* NAVBAR CSS */
+nav{
+  border-bottom: 1px #ccc solid;
+}
+
+#navLogo img{
+  height: 30px;
+  margin: 10px auto;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+  min-width: 100%;
+}
+
+#apply a{
+  color: #AD0000;
+  font-size: 10px;
+  padding-left: 5px;
+  float: none;
+  width: 100%;
+}
+
+
+/* lowerBar Css */
+#lowerBar{
+  padding: 0;
+}
+
+#lowerBar .row{
+  padding: 0;
+  background-color: #ccc;
+}
+
+#lowerBar .row .lowerBarLeft .nav-link {
+ text-align: center;
+ color: #000;
+}
+
+
+
+/* MEDIA BREAKS */
+/* Removes LowerBar Section and Text for Desktop */
+@media screen and (min-width:992px){
+  .desktopHide{
+    display: none;
+  }
+  #lowerBar .row .lowerBarLeft .nav-link {
+   margin-top: 2vw;
+  }
+}
+
+@media screen and (min-width:960px){
+  .mobileHide {
+    padding-right:5vw;
+  }
+  .campuses.dropdown-menu.show a,
+  .apply.dropdown-menu.show a {
+    color: #AD0000;
+    font-size: 15px;
+    padding-left: 5px;
+    float: none;
+    width: 100%;
+}
+
+  #lowerBar .row .lowerBarLeft .nav-link {
+   margin-top: 2vw;
+  }
+}
+
+/* Removes LowerBar Section and Text for Desktop */
+@media screen and (min-width:360px){
+ .desktopHide{
+   display: none;
+ }
+
+ form{
+   flex-flow: nowrap;
+  }
+
+  #lowerBar .row .lowerBarLeft .nav-link {
+   margin-top: 5vw;
+  }
+}
+
+
+/* Removes Text in the Upperbar at Break*/
+@media screen and (max-width:991px){
+  .mobileHide{
+    display: none;
+  }
+}

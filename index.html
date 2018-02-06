@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GrapesJS Preset Webpage</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="UofL Web Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP v4-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!--GRAPEJS CSS-->
+    <link href="css/grapes.css" rel="stylesheet">
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+
+    <!--OUR CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/navbar-bs40.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+</head>
+
+<body>
+<!--NAVBAR-->
+<header>
+    <!--UPPERBAR-->
+    <div id="upperbar">
+        <div class="accounts row">
+            <ul class="mobileHide float-right">
+                <li class="nav-item float-left">
+                    <a  class="nav-link" href="http://louisville.edu"><i class="glyphicon glyphicon-home glyphicon-white"></i>louisville.edu</a>
+                </li>
+                <li class="nav-item active dropdown float-right">
+                    <a class="nav-link dropdown-toggle" href="#" id="myAccounts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Accounts <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu container" aria-labelledby="campuses">
+                        <a href="">Exchange</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Cardmail</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Peoplesoft Hr</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Peoplesoft campus solutions</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">peoplesoft financials</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Ulink</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Blackboard</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="">Plone</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background-color:#f3f3f3">
+        <a id="navLogo" class="navbar-brand float-left" href="#"><img src="img/logo-desktop.png"></a>
+
+        <div class="mobileHide row">
+            <div class=''>
+                <ul class="navbar-nav mr-auto float-left">
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="apply" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apply <span class="sr-only">(current)</span>
+                        </a>
+                        <div class=" apply dropdown-menu" aria-labelledby="apply">
+                            <a href="http://louisville.edu/about/campuses.html#belknap">Belknap</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="http://louisville.edu/hsc/">HSC</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="http://louisville.edu/online">Online</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="campuses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Campuses
+                        </a>
+                        <div class=" campuses dropdown-menu" aria-labelledby="campuses">
+                            <a href="http://louisville.edu/about/campuses.html#belknap">Belknap</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="http://louisville.edu/hsc/">HSC</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="http://louisville.edu/online">Online</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search pages, people" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Go</button>
+                </form>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lowerBar" aria-controls="lowerBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!--LOWERBAR-->
+    <div  id="lowerBar" class="container-fluid collapse navbar-collapse desktopHide">
+        <div class="row justify-content-end ">
+            <div class="lowerBarLeft col-4">
+                <a  class="nav-link" href="http://louisville.edu"><i class="glyphicon glyphicon-home glyphicon-white"></i>louisville.edu</a>
+            </div>
+            <div class="lowerBarRight col-6">
+                <form class="form-inline my-2 my-lg-0">
+                    <label>
+                        <!-- Search UofL -->
+                        <input class="form-control mr-sm-1" type="search" placeholder="Search pages, people" aria-label="Search">
+                    </label>
+                    <button class="btn my-0 my-sm-0" type="submit">Go</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- NAVBAR END-->
+
+<div id="gjs" style="overflow:hidden">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+</div>
+<!--SCRIPTS-->
+<script src="./js/grapes.js"></script>
+<script src="./js/grapesjs-blocks-basic.min.js"></script>
+<script src="./js/grapesjs-tabs.min.js"></script>
+<script src="./js/grapesjs-slider.js"></script>
+<script src="./js/grapesjs-blocks-flexbox.min.js"></script>
+<script src="./js/grapesjs-plugin-export.min.js"></script>
+<script src="./js/grapesJS-config.js"></script>
+<!--SCRIPT END-->
+</body>
+</html>
